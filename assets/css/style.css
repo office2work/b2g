@@ -1,0 +1,328 @@
+@import url('https://fonts.cdnfonts.com/css/solaimanlipi');
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: 'SolaimanLipi', sans-serif!important;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    margin-left: 0;
+    transition: 0.5s !important;
+}
+
+/* header section  */
+ 
+.navbar {
+    background-color: #23252F;
+    z-index: 2100 !important;
+    box-shadow: 0 4px 15px -1px #23252fa3;
+    transition: 0.5s !important;
+}
+.navbar * {
+    font-size: 14px!important;
+}
+.logo {
+    position: relative;
+}
+.fl {
+    position: absolute;
+    top: -40px;
+    left: -15px;
+    height: 100px;
+}
+.navbar .navbar-collapse ul .nav-item .nav-link  {
+    color: white!important;
+    background-color: #23252F;
+
+}
+.navbar-collapse ul .nav-item .nav-link {
+    padding: 24px 10px;
+    font-size: 14px;
+}
+.navbar-collapse ul .nav-item i {
+    vertical-align: middle;
+    padding-top: 5px;
+}
+.navbar-collapse ul .nav-item:hover .nav-link {
+    color: white!important;
+    background-image: linear-gradient(to right, #505050 , #101016);
+}
+.navbar-collapse ul .dropdown-menu li:hover a {
+    background-image: linear-gradient(to right, #505050 , #101016);
+    color: white!important;
+}
+.dropdown-toggle::after {
+    content: none!important;
+}
+.log .button .bb {
+    box-shadow: 0 0 10px rgb(99, 93, 93);
+}
+.log .button button:hover {
+    background-image: linear-gradient(to right, #505050 , #101016);
+    color: white!important;
+}
+
+
+/* introduction section  */
+.slider {
+    padding: 60px 0;
+}
+.slider .item img {
+    border-radius: 10px;
+}
+.item {
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+.intro .slick-prev {
+    left: 30px;
+    z-index: 1;
+}
+.intro .slick-prev:before {
+    font-family: FontAwesome;
+    content: "\f104";
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+.intro .slick-next {
+    right: 30px;
+    z-index: 1;
+}
+.intro .slick-next:before {
+    font-family: FontAwesome;
+    content: "\f105";
+    background-color: white;
+    font-size: 16px;
+    color: black;
+    border-radius: 50%;
+    padding: 10px 13px;
+}
+.intro .slick-dots li {
+    margin: 0;
+}
+.intro .slick-dots li button:before {
+    background-color: #101016;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    line-height: 40px;
+}
+
+/* game section  */
+.game-section {
+    padding-bottom: 75px;
+}
+.item .img{
+    position: relative;
+}
+.item .item-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.item-overly {
+    display: none;
+}
+.item:hover .item-overly{
+    display: block;
+    text-align: center;
+    padding: 40% 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+
+}
+
+
+
+/* live section  */
+.live-section {
+    font-family: "Emblema One", system-ui;
+}
+.time {
+    font-size: 11px;
+}
+.live {
+    font-family: "Emblema One", system-ui;
+    font-size: 16px;
+}
+.live-section .text {
+    font-family: "Emblema One", system-ui;
+    padding: 43px 0;
+}
+.fs {
+    font-size: 12px;
+}
+.live-section .slick-prev:before {
+    font-family: FontAwesome;
+    content: "\f104";
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    padding: 20px 5px;
+    border-radius: 10px;
+}
+.live-section .slick-next:before {
+    font-family: FontAwesome;
+    content: "\f105";
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    padding: 20px 5px;
+    border-radius: 10px;
+}
+
+/* popular-section  */
+.popular-section {
+    padding: 80px 0;
+}
+.popular-section p {
+    font-weight: bold;
+}
+.popular-section .popular-item {
+    box-shadow: 0 0px 5px #978e8e;
+}
+
+
+/* footer section  */
+footer ul li {
+    list-style: none;
+    display: inline;  
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer .social-section ul li a {
+    color: white;
+}
+footer .social-section ul li i {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+footer .policy-section ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 10px;
+}
+footer .policy-section p {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+
+    .navbar-collapse ul .nav-item .nav-link {
+        padding: 10px 5px;
+    }
+    .navbar-collapse ul .nav-item .nav-link:hover {
+        background-color: #716F2E;
+    }
+    .navbar-collapse ul .nav-item i {
+        float: inline-end;
+    }
+    .navbar-collapse ul .dropdown-menu li:hover a {
+        background-image: linear-gradient(to right, #505050 , #101016);
+        color: white!important;
+    }
+
+    /* slider seciton */
+    .slider {
+        padding: 0;
+    }
+    .slider .item img {
+        border-radius: 0;
+
+    }
+    .intro .slick-prev {
+        display: none!important;
+    }
+    .intro .slick-next {
+        display: none!important;
+    }
+    .intro .slick-dots {
+        position: absolute;
+        bottom: 10px;
+
+    }.intro .slick-dots li button:before {
+        background-color: #ffffff;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+   
+
+}
+
+@media (max-width: 992px) {
+    /* navbar  */
+    .navbar {
+        padding: 10px 0!important;
+    }
+    .navbar-toggler {
+        background-color: white;
+    }
+    .navbar-collapse ul .nav-item .nav-link {
+        padding: 10px 5px;
+    }
+    .navbar-collapse ul .nav-item .nav-link:hover {
+        background-color: #716F2E;
+    }
+    .navbar-collapse ul .nav-item i {
+        float: inline-end;
+    }
+    .icon i {
+        display: none;
+    }
+    .log {
+        display: unset!important;
+    }
+    .button button {
+        width: 100%;
+        margin: 0 0 15px 0 !important;
+    }
+    header .profile {
+        display: none!important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-collapse ul .nav-item .nav-link {
+        padding: 15px 10px;
+    }
+}
+
+
+
+
