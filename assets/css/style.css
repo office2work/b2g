@@ -72,10 +72,9 @@ body {
     color: white!important;
 }
 
-
 /* introduction section  */
 .slider {
-    padding: 60px 0;
+    padding: 60px 12px;
 }
 .slider .item img {
     border-radius: 10px;
@@ -148,8 +147,6 @@ body {
 
 }
 
-
-
 /* live section  */
 .live-section {
     font-family: "Emblema One", system-ui;
@@ -198,7 +195,6 @@ body {
     box-shadow: 0 0px 5px #978e8e;
 }
 
-
 /* footer section  */
 footer ul li {
     list-style: none;
@@ -231,12 +227,6 @@ footer .policy-section p {
 
 
 
-
-
-
-
-
-
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) { 
 
@@ -262,27 +252,41 @@ footer .policy-section p {
         border-radius: 0;
 
     }
-    .intro .slick-prev {
+    .slick-prev {
         display: none!important;
     }
-    .intro .slick-next {
+    .slick-next {
         display: none!important;
     }
     .intro .slick-dots {
         position: absolute;
         bottom: 10px;
 
-    }.intro .slick-dots li button:before {
+    }
+    .intro .slick-dots li button:before {
         background-color: #ffffff;
     }
-
-
-
+    .game {
+        padding-bottom: 20px;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 0;
+        border-radius: 50%;
+    }
+    .slick-dots li.slick-active button:before {
+        border-radius: 50%;
+    }
+    .slick-dots li button:before {
+        background-color: #050404;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+    }
 }
 
 @media (max-width: 768px) {
    
-
 }
 
 @media (max-width: 992px) {
